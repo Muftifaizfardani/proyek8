@@ -1,0 +1,15 @@
+[0;1;31m*[0m mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Mon 2024-06-24 18:44:35 UTC; 3min 57s ago
+    Process: 1026206 ExecStartPre=/usr/share/mysql/mysql-systemd-start pre (code=exited, status=0/SUCCESS)
+    Process: 1026233 ExecStart=/usr/sbin/mysqld [0;1;31m(code=exited, status=1/FAILURE)[0m
+   Main PID: 1026233 (code=exited, status=1/FAILURE)
+     Status: "Server shutdown complete"
+        CPU: 456ms
+
+Jun 24 18:44:34 a2s systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MySQL Community Server.[0m
+Jun 24 18:44:35 a2s systemd[1]: mysql.service: Scheduled restart job, restart counter is at 5.
+Jun 24 18:44:35 a2s systemd[1]: Stopped MySQL Community Server.
+Jun 24 18:44:35 a2s systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmysql.service: Start request repeated too quickly.[0m
+Jun 24 18:44:35 a2s systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmysql.service: Failed with result 'exit-code'.[0m
+Jun 24 18:44:35 a2s systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MySQL Community Server.[0m
